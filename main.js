@@ -1,6 +1,7 @@
-function procCmd(cmd) {
-  if (cmd = "/heal") {
+function chatHook(text) {
+  var commandText = text.split(" ");
+  if(commandText[0] == ".heal") {
     preventDefault();
-    Player.setHealth(20);
+    clientMessage("You used the .heal command!");
   }
 }
