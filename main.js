@@ -4,8 +4,8 @@ function chatHook(text) {
     preventDefault();
     Player.addItemInventory(17,64,0);
   }
-  if(commandText[0] == ".iron") {
+  if(commandText[0] == ".heal") {
     preventDefault();
-    clientMessage("You used the .heal command!");
+    Player.setHealth(20);
   }
 }
