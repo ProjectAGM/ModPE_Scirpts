@@ -1,6 +1,6 @@
 function procCmd(cmd) {
-  preventDefault();
   if (cmd = "/heal") {
+    preventDefault();
     Player.setHealth(20);
   }
 }
