@@ -1,7 +1,6 @@
-/*function modTick() {
-  Server.getAllPlayerNames();
-}
-*/
-function chatReceiveHook(str, sender) {
-  clientMessage(ChatColor.RED + sender + " says: " + str);
+function procCmd(cmd) {
+  preventDefault();
+  if (cmd = "/heal") {
+    Player.setHealth(20);
+  }
 }
